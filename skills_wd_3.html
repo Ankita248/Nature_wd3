@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive landing page design</title>
+    <link rel="stylesheet" type="text/css" href="zairza_wd2.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap'); </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="skills_wd_3.html"><img src="logo1.webp" height="30px"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="textbox">
+            <h1>Nature and its Beauty</h1>
+            <p>"The inhabitants of the cities suppose that the country landscape is pleasant only half the year….To the attentive eye, each moment of the year has its own beauty, and in the same field it beholds, every hour, a picture which was never seen before, and which shall never be seen again."</p>
+            <a href="" class="mainbtn">Click here to know more</a>
+        </div>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right= "0";
+        }
+        function hidemenu(){
+            navLinks.style.right= "-200px";
+        }
+    </script>
+</body>
+</html>
